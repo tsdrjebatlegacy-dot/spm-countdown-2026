@@ -1,425 +1,1897 @@
 <!doctype html>
 <html lang="ms">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0759aa">
-<title>Countdown SPM 2026</title>
-<meta name="description" content="Live Countdown menuju Peperiksaan Bertulis SPM 2026.">
 
-<!-- Tukar kepada URL sebenar selepas publish -->
+<head>
+
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,viewport-fit=cover"
+>
+
+<meta
+  name="theme-color"
+  content="#0759aa"
+>
+
+<title>Countdown SPM 2026</title>
+
+<meta
+  name="description"
+  content="Live Countdown menuju Peperiksaan Bertulis SPM 2026, 23 November hingga 17 Disember 2026."
+>
+
+<link
+  rel="canonical"
+  href="https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/"
+>
+
+
+<!-- =====================================================
+     FACEBOOK / SOCIAL MEDIA
+===================================================== -->
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="Countdown SPM 2026">
-<meta property="og:description" content="Live Countdown menuju Peperiksaan Bertulis SPM 2026.">
-<meta property="og:url" content="YOUR_GITHUB_PAGES_URL">
-<meta property="og:image" content="YOUR_GITHUB_PAGES_URL/spm-countdown-bg.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+
+<meta
+  property="og:title"
+  content="Countdown SPM 2026"
+>
+
+<meta
+  property="og:description"
+  content="Live Countdown menuju Peperiksaan Bertulis SPM 2026 • 23 November – 17 Disember 2026."
+>
+
+<meta
+  property="og:url"
+  content="https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/"
+>
+
+<meta
+  property="og:image"
+  content="https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/spm-countdown-bg.png?v=3"
+>
+
+<meta
+  property="og:image:alt"
+  content="Countdown SPM 2026"
+>
+
+<meta
+  property="og:site_name"
+  content="Countdown SPM 2026"
+>
+
+
+<!-- Twitter / X -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="Countdown SPM 2026"
+>
+
+<meta
+  name="twitter:description"
+  content="Live Countdown menuju Peperiksaan Bertulis SPM 2026."
+>
+
+<meta
+  name="twitter:image"
+  content="https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/spm-countdown-bg.png?v=3"
+>
+
 
 <style>
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
 :root{
+
   --blue:#0759aa;
   --red:#ef161e;
   --ink:#111319;
-}
-*{box-sizing:border-box}
-html,body{min-height:100%;margin:0}
-body{
-  min-height:100vh;
-  display:grid;
-  place-items:center;
-  padding:18px;
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(circle at 15% 10%,rgba(255,255,255,.22),transparent 25%),
-    linear-gradient(135deg,#05bbc2,#3978de 50%,#7428dc);
-  color:#10223f;
-}
-.shell{
-  width:min(100%,550px);
-}
-.poster-wrap{
-  padding:5px;
-  background:#fff;
-  border-radius:4px;
-  box-shadow:0 24px 70px rgba(0,26,78,.38);
-}
-.poster{
-  position:relative;
-  width:100%;
-  aspect-ratio:275/392;
-  overflow:hidden;
-  background:#eaf6fb;
-}
-.poster-bg{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:fill;
-  user-select:none;
-  -webkit-user-drag:none;
+
 }
 
-/*
-  Overlay ini hanya menutup nombor 48 : 12 + HARI/JAM dalam imej asal.
-  Semua elemen poster lain kekal daripada gambar asal.
-*/
-.countdown-patch{
-  position:absolute;
-  z-index:3;
-  left:18.1%;
-  top:34.1%;
-  width:63.8%;
-  height:17.8%;
+
+*{
+  box-sizing:border-box;
+}
+
+
+html,
+body{
+
+  min-height:100%;
+  margin:0;
+
+}
+
+
+body{
+
+  min-height:100vh;
+
   display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:start;
-  padding-top:1.1%;
-  background:linear-gradient(180deg,#f4fafc 0%,#fbfcfe 30%,#fbfcfe 100%);
+
+  place-items:center;
+
+  padding:18px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(255,255,255,.22),
+      transparent 25%
+    ),
+
+    linear-gradient(
+      135deg,
+      #05bbc2,
+      #3978de 50%,
+      #7428dc
+    );
+
+  color:#10223f;
+
 }
-.count-cell{
-  min-width:0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
+
+
+/* =====================================================
+   MAIN WRAPPER
+===================================================== */
+
+.shell{
+
+  width:min(
+    100%,
+    550px
+  );
+
 }
-.number{
+
+
+/* =====================================================
+   POSTER FRAME
+===================================================== */
+
+.poster-wrap{
+
+  padding:5px;
+
+  background:#fff;
+
+  border-radius:4px;
+
+  box-shadow:
+    0 24px 70px
+    rgba(0,26,78,.38);
+
+}
+
+
+.poster{
+
+  position:relative;
+
+  width:100%;
+
+  aspect-ratio:275 / 392;
+
+  overflow:hidden;
+
+  background:#eaf6fb;
+
+}
+
+
+/* =====================================================
+   POSTER BACKGROUND
+===================================================== */
+
+.poster-bg{
+
+  position:absolute;
+
+  inset:0;
+
+  z-index:1;
+
+  width:100%;
+
+  height:100%;
+
   display:block;
-  font-variant-numeric:tabular-nums;
-  font-size:clamp(3.4rem,18vw,6rem);
+
+  object-fit:fill;
+
+  user-select:none;
+
+  -webkit-user-drag:none;
+
+}
+
+
+/* =====================================================
+   LIVE COUNTDOWN PATCH
+
+   Hanya bahagian nombor lama:
+   48 : 12
+   HARI JAM
+
+   yang ditutup.
+
+   Semua visual poster lain kekal.
+===================================================== */
+
+.countdown-patch{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:18.1%;
+
+  top:34.1%;
+
+  width:63.8%;
+
+  height:17.8%;
+
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items:start;
+
+  padding-top:1.1%;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #f4fafc 0%,
+      #fbfcfe 30%,
+      #fbfcfe 100%
+    );
+
+}
+
+
+/* =====================================================
+   COUNTDOWN CELLS
+===================================================== */
+
+.count-cell{
+
+  min-width:0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:flex-start;
+
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.number{
+
+  display:block;
+
+  font-variant-numeric:
+    tabular-nums;
+
+  font-size:
+    clamp(
+      3.4rem,
+      18vw,
+      6rem
+    );
+
   font-weight:400;
+
   line-height:.84;
+
   letter-spacing:-.055em;
+
   color:var(--ink);
+
   transform-origin:center;
+
 }
-.number.hours{color:var(--red)}
+
+
+.number.hours{
+
+  color:var(--red);
+
+}
+
+
+/* =====================================================
+   UNIT
+===================================================== */
+
 .unit{
+
   margin-top:.42em;
-  font-size:clamp(.62rem,2.6vw,1rem);
+
+  font-size:
+    clamp(
+      .62rem,
+      2.6vw,
+      1rem
+    );
+
   font-weight:900;
+
   line-height:1;
+
   color:#111;
+
   letter-spacing:.01em;
+
 }
+
+
+/* =====================================================
+   COLON
+===================================================== */
+
 .colon{
+
   align-self:start;
+
   margin-top:-.02em;
-  padding:0 .06em;
-  font-size:clamp(3.1rem,15.5vw,5.4rem);
+
+  padding:
+    0 .06em;
+
+  font-size:
+    clamp(
+      3.1rem,
+      15.5vw,
+      5.4rem
+    );
+
   font-weight:300;
+
   line-height:.86;
+
   color:#111;
-  animation:colonPulse 1.4s ease-in-out infinite;
+
+  animation:
+    colonPulse
+    1.4s
+    ease-in-out
+    infinite;
+
 }
-.change{animation:numberChange .32s ease-out}
+
+
+/* =====================================================
+   NUMBER CHANGE
+===================================================== */
+
+.change{
+
+  animation:
+    numberChange
+    .32s
+    ease-out;
+
+}
+
+
+/* =====================================================
+   LIVE STATUS
+===================================================== */
 
 .status-row{
+
   display:flex;
+
   justify-content:center;
+
   margin-top:10px;
+
 }
+
+
 .status{
+
   display:inline-flex;
+
   align-items:center;
+
   gap:7px;
-  padding:7px 12px;
-  border:1px solid rgba(255,255,255,.65);
-  border-radius:999px;
-  background:rgba(255,255,255,.9);
-  box-shadow:0 7px 20px rgba(0,32,92,.16);
+
+  padding:
+    7px 12px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.65);
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(255,255,255,.92);
+
+  box-shadow:
+    0 7px 20px
+    rgba(0,32,92,.16);
+
   font-size:.74rem;
+
   font-weight:900;
+
   color:#50647e;
-  backdrop-filter:blur(8px);
+
+  backdrop-filter:
+    blur(8px);
+
 }
+
+
+/* =====================================================
+   STATUS DOT
+===================================================== */
+
 .dot{
+
   width:8px;
+
   height:8px;
+
   border-radius:50%;
+
   background:#d79b00;
-  box-shadow:0 0 0 4px rgba(215,155,0,.12);
+
+  box-shadow:
+
+    0 0 0 4px
+    rgba(215,155,0,.12);
+
 }
-.status.live{color:#08733f}
+
+
+.status.live{
+
+  color:#08733f;
+
+}
+
+
 .status.live .dot{
+
   background:#12a65b;
-  box-shadow:0 0 0 4px rgba(18,166,91,.12);
-  animation:livePulse 1.8s ease-in-out infinite;
+
+  box-shadow:
+
+    0 0 0 4px
+    rgba(18,166,91,.12);
+
+  animation:
+
+    livePulse
+    1.8s
+    ease-in-out
+    infinite;
+
 }
-.status.offline{color:#9b4137}
+
+
+.status.offline{
+
+  color:#9b4137;
+
+}
+
+
 .status.offline .dot{
+
   background:#d84d3d;
-  box-shadow:0 0 0 4px rgba(216,77,61,.12);
+
+  box-shadow:
+
+    0 0 0 4px
+    rgba(216,77,61,.12);
+
 }
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
 .actions{
+
   display:flex;
+
   justify-content:center;
+
   gap:8px;
+
   flex-wrap:wrap;
+
   margin-top:9px;
+
 }
+
+
 button{
+
   appearance:none;
+
   border:0;
+
   border-radius:10px;
-  padding:10px 13px;
+
+  padding:
+    10px 13px;
+
   font:inherit;
+
   font-size:.78rem;
+
   font-weight:900;
+
   cursor:pointer;
-  transition:transform .15s ease,box-shadow .15s ease;
+
+  transition:
+
+    transform .15s ease,
+    box-shadow .15s ease;
+
 }
-button:active{transform:scale(.97)}
+
+
+button:active{
+
+  transform:
+    scale(.97);
+
+}
+
+
 .primary{
+
   color:#fff;
-  background:var(--blue);
-  box-shadow:0 6px 16px rgba(0,46,118,.22);
+
+  background:
+    var(--blue);
+
+  box-shadow:
+
+    0 6px 16px
+    rgba(0,46,118,.22);
+
 }
+
+
 .secondary{
+
   color:#153c6b;
-  background:rgba(255,255,255,.92);
-  border:1px solid rgba(203,219,236,.95);
+
+  background:
+    rgba(255,255,255,.92);
+
+  border:
+    1px solid
+    rgba(203,219,236,.95);
+
 }
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
 .hint{
-  margin:8px 0 0;
+
+  margin:
+    8px 0 0;
+
   text-align:center;
-  color:rgba(255,255,255,.92);
+
+  color:
+    rgba(255,255,255,.92);
+
   font-size:.68rem;
+
   font-weight:700;
+
 }
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.image-error{
+
+  position:absolute;
+
+  z-index:2;
+
+  inset:0;
+
+  display:none;
+
+  place-items:center;
+
+  padding:30px;
+
+  text-align:center;
+
+  background:#eef8fc;
+
+  color:#17375e;
+
+  font-size:.8rem;
+
+  font-weight:800;
+
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
 
 @keyframes numberChange{
-  0%{opacity:.2;transform:translateY(-5px) scale(1.04)}
-  100%{opacity:1;transform:translateY(0) scale(1)}
+
+  0%{
+
+    opacity:.2;
+
+    transform:
+
+      translateY(-5px)
+      scale(1.04);
+
+  }
+
+  100%{
+
+    opacity:1;
+
+    transform:
+
+      translateY(0)
+      scale(1);
+
+  }
+
 }
+
+
 @keyframes colonPulse{
-  0%,100%{opacity:1}
-  50%{opacity:.62}
+
+  0%,
+  100%{
+
+    opacity:1;
+
+  }
+
+  50%{
+
+    opacity:.62;
+
+  }
+
 }
+
+
 @keyframes livePulse{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.16)}
+
+  0%,
+  100%{
+
+    transform:
+      scale(1);
+
+  }
+
+  50%{
+
+    transform:
+      scale(1.16);
+
+  }
+
 }
-@media(max-width:360px){
-  body{padding:8px}
-  .poster-wrap{padding:3px}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media
+(max-width:360px){
+
+  body{
+
+    padding:8px;
+
+  }
+
+  .poster-wrap{
+
+    padding:3px;
+
+  }
+
 }
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media
+(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+  }
+
 }
+
+
 </style>
+
 </head>
+
+
 <body>
 
+
 <main class="shell">
+
+
+  <!-- =================================================
+       POSTER
+  ================================================== -->
+
   <div class="poster-wrap">
-    <section class="poster" id="poster" aria-label="Countdown SPM 2026">
-      <img class="poster-bg" src="spm-countdown-bg.png" alt="Poster Countdown SPM 2026">
 
-      <div class="countdown-patch" aria-live="polite">
-        <div class="count-cell">
-          <span class="number" id="days">--</span>
-          <span class="unit">HARI</span>
-        </div>
 
-        <div class="colon">:</div>
+    <section
+      class="poster"
+      id="poster"
+      aria-label="Countdown SPM 2026"
+    >
 
-        <div class="count-cell">
-          <span class="number hours" id="hours">--</span>
-          <span class="unit">JAM</span>
-        </div>
+
+      <!--
+        URL utama menggunakan GitHub Pages.
+
+        Jika gagal, JavaScript akan cuba
+        raw.githubusercontent.com secara automatik.
+      -->
+
+      <img
+
+        class="poster-bg"
+
+        id="posterBg"
+
+        src="https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/spm-countdown-bg.png?v=3"
+
+        alt="Poster Countdown SPM 2026"
+
+      >
+
+
+      <div
+        class="image-error"
+        id="imageError"
+      >
+
+        Poster sedang dimuatkan...
+
       </div>
+
+
+      <!-- =============================================
+           LIVE COUNTDOWN
+      ============================================== -->
+
+      <div
+        class="countdown-patch"
+        aria-live="polite"
+      >
+
+
+        <div class="count-cell">
+
+
+          <span
+            class="number"
+            id="days"
+          >
+            --
+          </span>
+
+
+          <span class="unit">
+
+            HARI
+
+          </span>
+
+
+        </div>
+
+
+        <div class="colon">
+
+          :
+
+        </div>
+
+
+        <div class="count-cell">
+
+
+          <span
+            class="number hours"
+            id="hours"
+          >
+            --
+          </span>
+
+
+          <span class="unit">
+
+            JAM
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+
     </section>
+
+
   </div>
+
+
+  <!-- =================================================
+       LIVE STATUS
+  ================================================== -->
 
   <div class="status-row">
-    <div class="status" id="status">
+
+
+    <div
+      class="status"
+      id="status"
+    >
+
+
       <span class="dot"></span>
-      <span id="statusText">MENYELARASKAN MASA...</span>
+
+
+      <span id="statusText">
+
+        MENYELARASKAN MASA...
+
+      </span>
+
+
     </div>
+
+
   </div>
+
+
+  <!-- =================================================
+       BUTTONS
+  ================================================== -->
 
   <div class="actions">
-    <button class="primary" id="shareBtn" type="button">Kongsi Countdown</button>
-    <button class="secondary" id="facebookBtn" type="button">Facebook</button>
-    <button class="secondary" id="fullBtn" type="button">Paparan Penuh</button>
+
+
+    <button
+      class="primary"
+      id="shareBtn"
+      type="button"
+    >
+
+      Kongsi Countdown
+
+    </button>
+
+
+    <button
+      class="secondary"
+      id="facebookBtn"
+      type="button"
+    >
+
+      Facebook
+
+    </button>
+
+
+    <button
+      class="secondary"
+      id="fullBtn"
+      type="button"
+    >
+
+      Paparan Penuh
+
+    </button>
+
+
   </div>
 
-  <p class="hint">Countdown diselaraskan dengan masa internet apabila dipaparkan melalui GitHub Pages.</p>
+
+  <p class="hint">
+
+    Countdown diselaraskan dengan masa internet
+    apabila dipaparkan melalui GitHub Pages.
+
+  </p>
+
+
 </main>
 
+
+
 <script>
-/* =========================================================
-   SPM 2026 LIVE COUNTDOWN
-   Sasaran: 23 November 2026, 12:00 tengah malam Malaysia
-========================================================= */
 
-const TARGET_EPOCH = Date.parse('2026-11-23T00:00:00+08:00');
-const SYNC_EVERY = 5 * 60 * 1000;
 
-const daysEl = document.getElementById('days');
-const hoursEl = document.getElementById('hours');
-const statusEl = document.getElementById('status');
-const statusText = document.getElementById('statusText');
-const shareBtn = document.getElementById('shareBtn');
-const facebookBtn = document.getElementById('facebookBtn');
-const fullBtn = document.getElementById('fullBtn');
+/* =====================================================
+   CONFIGURATION
+===================================================== */
 
-let internetOffset = Number(localStorage.getItem('spmInternetOffset')) || 0;
-let hasInternetSync = localStorage.getItem('spmHasInternetSync') === '1';
-
-function currentTime(){
-  return Date.now() + internetOffset;
-}
-
-function setStatus(type,text){
-  statusEl.classList.remove('live','offline');
-  if(type) statusEl.classList.add(type);
-  statusText.textContent = text;
-}
 
 /*
-  Tanpa backend tambahan:
-  apabila halaman berada di GitHub Pages, browser meminta semula halaman
-  daripada server dan membaca HTTP Date header. Ini memberi rujukan masa
-  internet. Jika server/header tidak tersedia, sistem menggunakan sync
-  terakhir atau jam peranti sebagai fallback.
+  Peperiksaan Bertulis SPM 2026
+
+  Countdown menuju:
+  23 November 2026
+  12:00 tengah malam
+  Malaysia Time UTC+8
 */
-async function syncInternetTime(){
-  if(location.protocol === 'file:'){
-    setStatus('offline','LOCAL • AKAN LIVE SELEPAS PUBLISH');
-    return;
+
+const TARGET_EPOCH =
+  Date.parse(
+    '2026-11-23T00:00:00+08:00'
+  );
+
+
+const SYNC_EVERY =
+  5 * 60 * 1000;
+
+
+const PAGE_URL =
+  'https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/';
+
+
+const PRIMARY_POSTER =
+
+  'https://tsdrjebatlegacy-dot.github.io/spm-countdown-2026/spm-countdown-bg.png?v=3';
+
+
+const FALLBACK_POSTER =
+
+  'https://raw.githubusercontent.com/tsdrjebatlegacy-dot/spm-countdown-2026/main/spm-countdown-bg.png?v=3';
+
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const daysEl =
+  document.getElementById(
+    'days'
+  );
+
+
+const hoursEl =
+  document.getElementById(
+    'hours'
+  );
+
+
+const statusEl =
+  document.getElementById(
+    'status'
+  );
+
+
+const statusText =
+  document.getElementById(
+    'statusText'
+  );
+
+
+const shareBtn =
+  document.getElementById(
+    'shareBtn'
+  );
+
+
+const facebookBtn =
+  document.getElementById(
+    'facebookBtn'
+  );
+
+
+const fullBtn =
+  document.getElementById(
+    'fullBtn'
+  );
+
+
+const posterBg =
+  document.getElementById(
+    'posterBg'
+  );
+
+
+const imageError =
+  document.getElementById(
+    'imageError'
+  );
+
+
+
+/* =====================================================
+   POSTER IMAGE FALLBACK
+===================================================== */
+
+let posterFallbackUsed =
+  false;
+
+
+posterBg.addEventListener(
+  'load',
+  () => {
+
+    imageError.style.display =
+      'none';
+
+  }
+);
+
+
+posterBg.addEventListener(
+  'error',
+  () => {
+
+
+    /*
+      Jika GitHub Pages image gagal,
+      cuba GitHub Raw.
+    */
+
+    if(
+      !posterFallbackUsed
+    ){
+
+      posterFallbackUsed =
+        true;
+
+
+      console.warn(
+        'GitHub Pages poster gagal. Cuba GitHub Raw...'
+      );
+
+
+      posterBg.src =
+        FALLBACK_POSTER;
+
+
+      return;
+
+    }
+
+
+    /*
+      Jika kedua-duanya gagal.
+    */
+
+    imageError.style.display =
+      'grid';
+
+
+    imageError.textContent =
+
+      'Poster tidak dapat dimuatkan. Sila refresh halaman.';
+
+
+  }
+);
+
+
+
+/* =====================================================
+   INTERNET TIME
+===================================================== */
+
+
+let internetOffset =
+
+  Number(
+
+    localStorage.getItem(
+      'spmInternetOffset'
+    )
+
+  ) || 0;
+
+
+let hasInternetSync =
+
+  localStorage.getItem(
+    'spmHasInternetSync'
+  ) === '1';
+
+
+
+function currentTime(){
+
+  return (
+
+    Date.now() +
+    internetOffset
+
+  );
+
+}
+
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+function setStatus(
+  type,
+  text
+){
+
+  statusEl.classList.remove(
+    'live',
+    'offline'
+  );
+
+
+  if(type){
+
+    statusEl.classList.add(
+      type
+    );
+
   }
 
-  try{
-    const url = new URL(location.href);
-    url.searchParams.set('_time',Date.now());
-    url.hash = '';
 
-    const sentAt = Date.now();
+  statusText.textContent =
+    text;
+
+}
+
+
+
+/* =====================================================
+   INTERNET TIME SYNC
+
+   GitHub Pages server HTTP Date header
+   digunakan sebagai rujukan internet time.
+===================================================== */
+
+async function syncInternetTime(){
+
+
+  /*
+    Jika fail dibuka terus daripada komputer.
+  */
+
+  if(
+    location.protocol ===
+    'file:'
+  ){
+
+    setStatus(
+      'offline',
+      'LOCAL • AKAN LIVE SELEPAS PUBLISH'
+    );
+
+    return;
+
+  }
+
+
+  try{
+
+
+    const url =
+      new URL(
+        PAGE_URL
+      );
+
+
+    /*
+      Cache busting supaya request
+      benar-benar pergi ke server.
+    */
+
+    url.searchParams.set(
+      '_time',
+      Date.now()
+    );
+
+
+    const sentAt =
+      Date.now();
+
+
     let response;
 
+
     try{
-      response = await fetch(url.toString(),{
-        method:'HEAD',
-        cache:'no-store',
-        credentials:'same-origin'
-      });
-    }catch(_){
-      response = await fetch(url.toString(),{
-        method:'GET',
-        cache:'no-store',
-        credentials:'same-origin'
-      });
+
+
+      response =
+        await fetch(
+          url.toString(),
+          {
+
+            method:
+              'HEAD',
+
+            cache:
+              'no-store'
+
+          }
+        );
+
+
+    }
+    catch(_){
+
+
+      response =
+        await fetch(
+          url.toString(),
+          {
+
+            method:
+              'GET',
+
+            cache:
+              'no-store'
+
+          }
+        );
+
+
     }
 
-    const receivedAt = Date.now();
-    const dateHeader = response.headers.get('date');
 
-    if(!dateHeader) throw new Error('Date header tidak tersedia');
+    const receivedAt =
+      Date.now();
 
-    const serverEpoch = Date.parse(dateHeader);
-    if(!Number.isFinite(serverEpoch)) throw new Error('Masa server tidak sah');
 
-    // Anggaran separuh round-trip latency untuk ketepatan yang lebih baik.
-    const halfLatency = (receivedAt - sentAt) / 2;
-    internetOffset = (serverEpoch + halfLatency) - receivedAt;
-    hasInternetSync = true;
+    const dateHeader =
+      response.headers.get(
+        'date'
+      );
 
-    localStorage.setItem('spmInternetOffset',String(internetOffset));
-    localStorage.setItem('spmHasInternetSync','1');
 
-    const syncTime = new Intl.DateTimeFormat('ms-MY',{
-      hour:'2-digit',minute:'2-digit',second:'2-digit',
-      hour12:true,timeZone:'Asia/Kuala_Lumpur'
-    }).format(new Date(currentTime()));
+    if(
+      !dateHeader
+    ){
 
-    setStatus('live',`LIVE • INTERNET TIME • ${syncTime}`);
-  }catch(error){
-    if(hasInternetSync){
-      setStatus('offline','OFFLINE • GUNA SYNC TERAKHIR');
-    }else{
-      setStatus('offline','LOCAL TIME • MENUNGGU INTERNET SYNC');
+      throw new Error(
+        'Date header tidak tersedia'
+      );
+
     }
-    console.warn('Time sync:',error);
+
+
+    const serverEpoch =
+      Date.parse(
+        dateHeader
+      );
+
+
+    if(
+      !Number.isFinite(
+        serverEpoch
+      )
+    ){
+
+      throw new Error(
+        'Masa server tidak sah'
+      );
+
+    }
+
+
+    /*
+      Compensate sedikit network latency.
+    */
+
+    const halfLatency =
+
+      (
+        receivedAt -
+        sentAt
+      ) / 2;
+
+
+    internetOffset =
+
+      (
+        serverEpoch +
+        halfLatency
+      ) -
+
+      receivedAt;
+
+
+    hasInternetSync =
+      true;
+
+
+    localStorage.setItem(
+      'spmInternetOffset',
+      String(
+        internetOffset
+      )
+    );
+
+
+    localStorage.setItem(
+      'spmHasInternetSync',
+      '1'
+    );
+
+
+    /*
+      Paparkan masa Malaysia
+      ketika sync berjaya.
+    */
+
+    const syncTime =
+
+      new Intl.DateTimeFormat(
+        'ms-MY',
+        {
+
+          hour:
+            '2-digit',
+
+          minute:
+            '2-digit',
+
+          second:
+            '2-digit',
+
+          hour12:
+            true,
+
+          timeZone:
+            'Asia/Kuala_Lumpur'
+
+        }
+      )
+      .format(
+        new Date(
+          currentTime()
+        )
+      );
+
+
+    setStatus(
+      'live',
+      `LIVE • INTERNET TIME • ${syncTime}`
+    );
+
+
   }
+  catch(error){
+
+
+    if(
+      hasInternetSync
+    ){
+
+      setStatus(
+        'offline',
+        'OFFLINE • GUNA SYNC TERAKHIR'
+      );
+
+    }
+    else{
+
+      setStatus(
+        'offline',
+        'LOCAL TIME • MENUNGGU INTERNET SYNC'
+      );
+
+    }
+
+
+    console.warn(
+      'Time sync:',
+      error
+    );
+
+
+  }
+
 }
 
-function animateValue(el,value){
-  const text = String(value);
-  if(el.textContent === text) return;
-  el.classList.remove('change');
-  void el.offsetWidth;
-  el.textContent = text;
-  el.classList.add('change');
+
+
+/* =====================================================
+   NUMBER ANIMATION
+===================================================== */
+
+function animateValue(
+  element,
+  value
+){
+
+  const text =
+    String(
+      value
+    );
+
+
+  if(
+    element.textContent ===
+    text
+  ){
+
+    return;
+
+  }
+
+
+  element.classList.remove(
+    'change'
+  );
+
+
+  /*
+    Trigger browser reflow
+    supaya animation boleh bermula semula.
+  */
+
+  void element.offsetWidth;
+
+
+  element.textContent =
+    text;
+
+
+  element.classList.add(
+    'change'
+  );
+
 }
+
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
 
 function tick(){
-  const diff = TARGET_EPOCH - currentTime();
 
-  if(diff <= 0){
-    animateValue(daysEl,'00');
-    animateValue(hoursEl,'00');
+
+  const diff =
+
+    TARGET_EPOCH -
+    currentTime();
+
+
+  /*
+    Hari peperiksaan sudah tiba.
+  */
+
+  if(
+    diff <= 0
+  ){
+
+
+    animateValue(
+      daysEl,
+      '00'
+    );
+
+
+    animateValue(
+      hoursEl,
+      '00'
+    );
+
+
     return;
+
   }
 
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
 
-  animateValue(daysEl,days.toLocaleString('ms-MY'));
-  animateValue(hoursEl,String(hours).padStart(2,'0'));
+  /*
+    Jumlah hari penuh.
+  */
+
+  const days =
+
+    Math.floor(
+
+      diff /
+      86400000
+
+    );
+
+
+  /*
+    Jam selepas hari penuh.
+  */
+
+  const hours =
+
+    Math.floor(
+
+      (
+        diff %
+        86400000
+      ) /
+
+      3600000
+
+    );
+
+
+  animateValue(
+
+    daysEl,
+
+    days.toLocaleString(
+      'ms-MY'
+    )
+
+  );
+
+
+  animateValue(
+
+    hoursEl,
+
+    String(
+      hours
+    )
+    .padStart(
+      2,
+      '0'
+    )
+
+  );
+
 }
 
-shareBtn.addEventListener('click',async()=>{
-  const data = {
-    title:'Countdown SPM 2026',
-    text:'Live Countdown menuju Peperiksaan Bertulis SPM 2026.',
-    url:location.href
-  };
 
-  try{
-    if(navigator.share){
-      await navigator.share(data);
-      return;
+
+/* =====================================================
+   SHARE BUTTON
+===================================================== */
+
+shareBtn.addEventListener(
+  'click',
+  async () => {
+
+
+    const data = {
+
+      title:
+        'Countdown SPM 2026',
+
+      text:
+        'Live Countdown menuju Peperiksaan Bertulis SPM 2026.',
+
+      url:
+        PAGE_URL
+
+    };
+
+
+    try{
+
+
+      /*
+        Telefon / browser yang menyokong
+        native share dialog.
+      */
+
+      if(
+        navigator.share
+      ){
+
+        await navigator.share(
+          data
+        );
+
+        return;
+
+      }
+
+
+      /*
+        Desktop fallback:
+        copy link.
+      */
+
+      await navigator.clipboard.writeText(
+        PAGE_URL
+      );
+
+
+      const old =
+        shareBtn.textContent;
+
+
+      shareBtn.textContent =
+        'Link Disalin ✓';
+
+
+      setTimeout(
+        () => {
+
+          shareBtn.textContent =
+            old;
+
+        },
+        1600
+      );
+
+
     }
-    await navigator.clipboard.writeText(location.href);
-    const old = shareBtn.textContent;
-    shareBtn.textContent = 'Link Disalin ✓';
-    setTimeout(()=>shareBtn.textContent=old,1600);
-  }catch(_){ }
-});
+    catch(error){
 
-facebookBtn.addEventListener('click',()=>{
-  const url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href);
-  window.open(url,'_blank','noopener,noreferrer');
-});
+      console.warn(
+        'Share:',
+        error
+      );
 
-fullBtn.addEventListener('click',async()=>{
-  try{
-    if(!document.fullscreenElement){
-      await document.documentElement.requestFullscreen();
-      fullBtn.textContent = 'Keluar Penuh';
-    }else{
-      await document.exitFullscreen();
-      fullBtn.textContent = 'Paparan Penuh';
     }
-  }catch(_){ }
-});
 
-document.addEventListener('fullscreenchange',()=>{
-  if(!document.fullscreenElement) fullBtn.textContent = 'Paparan Penuh';
-});
 
-window.addEventListener('online',syncInternetTime);
-window.addEventListener('offline',()=>setStatus('offline','OFFLINE • GUNA SYNC TERAKHIR'));
+  }
+);
+
+
+
+/* =====================================================
+   FACEBOOK
+===================================================== */
+
+facebookBtn.addEventListener(
+  'click',
+  () => {
+
+
+    const url =
+
+      'https://www.facebook.com/sharer/sharer.php?u=' +
+
+      encodeURIComponent(
+        PAGE_URL
+      );
+
+
+    window.open(
+
+      url,
+
+      '_blank',
+
+      'noopener,noreferrer'
+
+    );
+
+
+  }
+);
+
+
+
+/* =====================================================
+   FULLSCREEN
+===================================================== */
+
+fullBtn.addEventListener(
+  'click',
+  async () => {
+
+
+    try{
+
+
+      if(
+        !document.fullscreenElement
+      ){
+
+
+        await document
+          .documentElement
+          .requestFullscreen();
+
+
+        fullBtn.textContent =
+          'Keluar Penuh';
+
+
+      }
+      else{
+
+
+        await document
+          .exitFullscreen();
+
+
+        fullBtn.textContent =
+          'Paparan Penuh';
+
+
+      }
+
+
+    }
+    catch(error){
+
+      console.warn(
+        'Fullscreen:',
+        error
+      );
+
+    }
+
+
+  }
+);
+
+
+
+document.addEventListener(
+  'fullscreenchange',
+  () => {
+
+
+    if(
+      !document.fullscreenElement
+    ){
+
+      fullBtn.textContent =
+        'Paparan Penuh';
+
+    }
+
+
+  }
+);
+
+
+
+/* =====================================================
+   INTERNET CONNECTION
+===================================================== */
+
+window.addEventListener(
+  'online',
+  () => {
+
+    syncInternetTime();
+
+  }
+);
+
+
+window.addEventListener(
+  'offline',
+  () => {
+
+    setStatus(
+      'offline',
+      'OFFLINE • GUNA SYNC TERAKHIR'
+    );
+
+  }
+);
+
+
+
+/* =====================================================
+   START
+===================================================== */
+
+
+/*
+  Kira terus sebaik sahaja web dibuka.
+*/
 
 tick();
-setInterval(tick,1000);
+
+
+/*
+  Countdown dikemas kini setiap saat.
+*/
+
+setInterval(
+  tick,
+  1000
+);
+
+
+/*
+  Sync masa internet selepas web dibuka.
+*/
+
 syncInternetTime();
-setInterval(syncInternetTime,SYNC_EVERY);
+
+
+/*
+  Sync semula setiap 5 minit.
+*/
+
+setInterval(
+  syncInternetTime,
+  SYNC_EVERY
+);
+
+
 </script>
+
+
 </body>
+
 </html>
